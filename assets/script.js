@@ -22,16 +22,17 @@ for (i=0; i<senIndArr.length; i++) {
             let level = getLevel(pm25);
             let element = document.createElement('div');
             element.id = senInd;
-            let nameEl = document.createElement('h1');
+            element.className = 'entry';
+            let nameEl = document.createElement('h3');
             nameEl.className = 'name';
-            nameEl.textContent = senName;
-            let pmEl = document.createElement('h1');
+            nameEl.textContent = "Location: "+senName;
+            let pmEl = document.createElement('h3');
             pmEl.className = 'pm';
-            pmEl.textContent = pm25;
-            let levelEl = document.createElement('h1');
+            pmEl.textContent = "PM2.5: "+pm25+" µg/m3";
+            let levelEl = document.createElement('h3');
             levelEl.className = 'level';
-            levelEl.textContent = level;
-            let messageEl = document.createElement('h1');
+            levelEl.textContent = "Level: "+level;
+            let messageEl = document.createElement('h3');
             messageEl.className = 'message';
             messageEl.textContent = 'Calibrate Now!';
             element.appendChild(nameEl);
@@ -139,9 +140,9 @@ function updateEntry(i) {
             let color = getColor(pm25);
             let level = getLevel(pm25);
             let pmEl = element.querySelector('.pm');
-            pmEl.textContent = pm25;
+            pmEl.textContent = "PM2.5: "+pm25+" µg/m3";
             let levelEl = element.querySelector('.level');
-            levelEl.textContent = level;
+            levelEl.textContent = "Level: "+level;
             element.style.backgroundColor = color;
         })
         .catch(function(error) {

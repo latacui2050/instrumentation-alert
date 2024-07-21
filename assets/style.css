@@ -1,10 +1,66 @@
+* {
+    text-align: center;
+}
+
+html {
+    background: linear-gradient(white, #9198e5);
+}
+
+.logo {
+    display:flex;
+    justify-content: center;
+}
+
+h1 {
+    color: darkmagenta;
+}
+
+h2 {
+    color: teal;
+}
+
+h3 {
+    color: aliceblue;
+}
+
+h1, h2, h3 {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h3 {
+    margin: 5px auto;
+}
+.entry {
+    padding: 20px 0px;
+    margin: 10px 0;
+    border-radius: 10px;
+    box-shadow: 10px 5px 5px teal;
+
+}
+
+img {
+    height: 100px;
+    margin: 0 10px;
+}
+
+#card {
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 10px;
+    margin: auto;
+    width: 500px;
+    box-shadow: none;
+    background-color: aliceblue;
+    height: 600px;
+}
+
 .hidden {
     display: none;
 }
 
 .message { 
-    font-size: 5em; 
-    font-family: serif; 
+    /* font-size: 1em;  */
+    /* font-family: serif;  */
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: red; 
     text-align: center; 
     animation: animate 
